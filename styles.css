@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppin', sans-serif;
+    color: white;
+}
+@media (max-width: 499px) {
+    form {
+        width: 100%;
+    }
+}
+@media (min-width: 500px) {
+    form {
+        width: 300px;
+    }
+}
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: linear-gradient(#bd09b7, #6b4cf5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label,
+input {
+    margin-top: 2px;
+    display: block;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.email,
+.password {
+    height: 30px;
+    width: 100%;
+}
+
+.list {
+    margin-top: 5px;
+    height: 40px;
+    width: 103%;
+}
+
+.check {
+    margin-top: 10px;
+    display: flex;
+}
+
+button {
+    padding: 5px 15px;
+    color: black;
+    background-color: white;
+    margin-left: 13rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    height: 35px;
+    width: 100px;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    /* Cambia este valor al color deseado */
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+input[type="checkbox"]:checked::before {
+    background-color: #00ff00;
+    /* Cambia este valor al color deseado cuando el checkbox esté marcado */
+}
+
+.acepto {
+    margin-left: 3%;
+}
